@@ -9,7 +9,7 @@ namespace Herencia
     internal class Vehiculos
     {
         private string nombre;
-        private int matricula;
+        private int Matricula;
         private double precio;
         private string marca;
         private string modelo;
@@ -20,7 +20,7 @@ namespace Herencia
         private double Ancho;
 
         public string Nombre { get => nombre; set => nombre = value; }
-        public int Matricula { get => matricula; set => matricula = value; }
+        public int Matricula1 { get => Matricula; set => Matricula = value; }
         public double Precio { get => precio; set => precio = value; }
         public string Marca { get => marca; set => marca = value; }
         public string Modelo { get => modelo; set => modelo = value; }

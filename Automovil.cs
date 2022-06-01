@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    internal class Automovil
+    internal class Automovil : Terrestres
     {
-        private int capacidadMaletero;
+        private string capacidadMaletero;
 
-        public int CapacidadMaletero { get => capacidadMaletero; set => capacidadMaletero = value; }
+        public string CapacidadMaletero { get => capacidadMaletero; set => capacidadMaletero = value; }
     }
 }

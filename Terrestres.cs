@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    internal class Terrestres
+    internal class Terrestres : Vehiculos
     {
-        private string numLuces;
-        private string nombreVehiculo;
-        private int cantRueadas;
+        private int numLuces;
+        private int cantRuedas;
         private string Neumaticos;
         private int numVentanas;
         private string capacidad;
@@ -20,9 +19,8 @@ namespace Herencia
         private string tipoSuspension;
         private string uso;
 
-        public string NumLuces { get => numLuces; set => numLuces = value; }
-        public string NombreVehiculo { get => nombreVehiculo; set => nombreVehiculo = value; }
-        public int CantRueadas { get => cantRueadas; set => cantRueadas = value; }
+        public int NumLuces { get => numLuces; set => numLuces = value; }
+        public int CantRuedas { get => cantRuedas; set => cantRuedas = value; }
         public string Neumaticos1 { get => Neumaticos; set => Neumaticos = value; }
         public int NumVentanas { get => numVentanas; set => numVentanas = value; }
         public string Capacidad { get => capacidad; set => capacidad = value; }

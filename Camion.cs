@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    internal class Camion
+    internal class Camion : Terrestres
     {
         private string tipoCarga;
         private string CapacidadCarga;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    internal class Motocicleta
+    internal class Motocicleta : Terrestres
     {
         private string chasis;
         private string tipoMotor;

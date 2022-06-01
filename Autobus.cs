@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    internal class Autobus
+    internal class Autobus : Terrestres
     {
         private string rutas;
 
