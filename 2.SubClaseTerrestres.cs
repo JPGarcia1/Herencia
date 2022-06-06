@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    internal class Terrestres : Vehiculos
+    internal class SubClaseTerrestres : SuperClaseVehiculos
     {
         private int numLuces;
         private int cantRuedas;
@@ -18,6 +18,21 @@ namespace Herencia
         private int numAsientos;
         private string tipoSuspension;
         private string uso;
+
+        public SubClaseTerrestres(int numLuces, int cantRuedas, string neumaticos, int numVentanas, string capacidad, string carroceria, int capacidadDePasajeros, int numAsientos, string tipoSuspension, string uso) 
+        : base("NombreVehiculo", 000000, 00000000, "MarcaVehiculo", "ModeloVehiculo", "ColorVehiculo", "CilindrajeVehiculo", "CombustibleVehiculo", 0.000,0.000)
+        {
+            this.numLuces = numLuces;
+            this.cantRuedas = cantRuedas;
+            this.Neumaticos = neumaticos;
+            this.numVentanas = numVentanas;
+            this.capacidad = capacidad;
+            this.carroceria = carroceria;
+            this.capacidadDePasajeros = capacidadDePasajeros;
+            this.numAsientos = numAsientos;
+            this.tipoSuspension = tipoSuspension;
+            this.uso = uso;
+        }
 
         public int NumLuces { get => numLuces; set => numLuces = value; }
         public int CantRuedas { get => cantRuedas; set => cantRuedas = value; }

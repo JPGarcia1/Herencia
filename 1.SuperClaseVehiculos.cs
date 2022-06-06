@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    internal class Vehiculos
+    internal class SuperClaseVehiculos
     {
         private string nombre;
         private int Matricula;
@@ -18,6 +18,20 @@ namespace Herencia
         private string combustible;
         private double Largo;
         private double Ancho;
+
+        public SuperClaseVehiculos(string nombre, int matricula, double precio, string marca, string modelo, string color, string cilindraje, string combustible, double largo, double ancho)
+        {
+            this.nombre = nombre;
+            this.Matricula = matricula;
+            this.precio = precio;
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.cilindraje = cilindraje;
+            this.combustible = combustible;
+            this.Largo = largo;
+            this.Ancho = ancho;
+        }
 
         public string Nombre { get => nombre; set => nombre = value; }
         public int Matricula1 { get => Matricula; set => Matricula = value; }

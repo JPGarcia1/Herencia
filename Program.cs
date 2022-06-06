@@ -10,8 +10,8 @@ namespace Herencia
     {
         static void Main(string[] args)
         {
-            Automovil automovil;
-            automovil = new Automovil();
+            SubClaseAutomovil automovil;
+            automovil = new SubClaseAutomovil("500 Kg.");
 
             automovil.Matricula1 = 5127369;
             automovil.Marca = "Chevrolet";
@@ -45,11 +45,11 @@ namespace Herencia
             Console.WriteLine("Tiene un total de "+automovil.NumAsientos+" asientos");
             Console.WriteLine("Es de uso "+automovil.Uso);
 
-            Console.WriteLine("Maletero con capacidad de "+automovil.CapacidadMaletero);
+            Console.WriteLine("Maletero con capacidad de "+automovil.CapacidadMaletero+"\n");
 
 
-            Motocicleta motocicleta;
-            motocicleta = new Motocicleta();
+            SubClaseMotocicleta motocicleta;
+            motocicleta = new SubClaseMotocicleta("Acero.", "4 Tiempos, Monocilíndrico, SOHC, DTSi, 4 Válvulas.");
 
             motocicleta.Nombre = "Pulsar 180 Fi Neon.";
             motocicleta.Matricula1 = 152362;
@@ -70,7 +70,7 @@ namespace Herencia
             motocicleta.Chasis = "Acero.";
             motocicleta.TipoMotor = "4 Tiempos, Monocilíndrico, SOHC, DTSi, 4 Válvulas.";
 
-            Console.WriteLine("~~~~~Motocicleta~~~~~");
+            Console.WriteLine("\n~~~~~Motocicleta~~~~~");
             Console.WriteLine("~~~~~Propiedades~~~~~");
             Console.WriteLine("Nombre: "+motocicleta.Nombre);
             Console.WriteLine("Matricula: " + motocicleta.Matricula1 + ".");
@@ -88,11 +88,11 @@ namespace Herencia
             Console.WriteLine("Es de uso " + motocicleta.Uso);
 
             Console.WriteLine("Chasis de " + motocicleta.Chasis);
-            Console.WriteLine("Motor de "+motocicleta.TipoMotor);
+            Console.WriteLine("Motor de "+motocicleta.TipoMotor+"\n");
 
 
-            Camion camion;
-            camion = new Camion();
+            SubClaseCamion camion;
+            camion = new SubClaseCamion("Alimentos.", "4.782 Kg.");
 
             camion.Nombre = "Camión NPR Euro IV.";
             camion.Matricula1 = 371277;
@@ -111,7 +111,7 @@ namespace Herencia
             camion.TipoCarga = "Alimentos.";
             camion.CapacidadCarga1 = "4.782 Kg.";
 
-            Console.WriteLine("~~~~~~~~Camión~~~~~~~");
+            Console.WriteLine("\n~~~~~~~~Camión~~~~~~~");
             Console.WriteLine("~~~~~Propiedades~~~~~");
             Console.WriteLine("Nombre: " + camion.Nombre);
             Console.WriteLine("Matricula: " + camion.Matricula1 + ".");
@@ -128,7 +128,49 @@ namespace Herencia
             Console.WriteLine("Es de uso " + camion.Uso);
 
             Console.WriteLine("Carga: " + camion.TipoCarga);
-            Console.WriteLine("Motor de carga: " + camion.CapacidadCarga1);
+            Console.WriteLine("Motor de carga: " + camion.CapacidadCarga1+"\n");
+
+
+            SubClaseAutobus autobus;
+            autobus = new SubClaseAutobus("Bogotá a Medellin",60.000);
+
+            autobus.Nombre = "Volvo 9900 13.1 M.";
+            autobus.Matricula1 = 247362;
+            autobus.Marca = "Volvo Buses";
+            autobus.Modelo = "6 x 2, 13.1 m";
+            autobus.Cilindraje = "10,8 litros";
+            autobus.Combustible = "Diesel";
+            autobus.Ancho1 = 2.550;
+            autobus.Largo1 = 13.100;
+            autobus.CantRuedas = 6;
+            autobus.Neumaticos1 = "'295/80 R22,5' o '315/80 R22,5'";
+            autobus.Carroceria = "Volvo B8R";
+            autobus.NumAsientos = 49;
+            autobus.CapacidadDePasajeros = 49;
+            autobus.Uso = "Publico";
+
+            autobus.Rutas = "Bogotá a Medellin";
+            autobus.ValorPasaje = 60.000;
+
+            Console.WriteLine("\n~~~~~~~Autobus~~~~~~~");
+            Console.WriteLine("~~~~~Propiedades~~~~~");
+            Console.WriteLine("Nombre: "+autobus.Nombre);
+            Console.WriteLine("Matricula: " + autobus.Matricula1);
+            Console.WriteLine("Marca: " + autobus.Marca);
+            Console.WriteLine("Modelo: " + autobus.Modelo);
+            Console.WriteLine("Capacidad de cilindraje de: " + autobus.Cilindraje);
+            Console.WriteLine("Combustible utilizado: " + autobus.Combustible);
+            Console.WriteLine("El ancho es de " + autobus.Ancho1 + " metros.");
+            Console.WriteLine("El largo es de " + autobus.Largo1 + " metros.");
+            Console.WriteLine("Cuenta con " + autobus.CantRuedas + " ruedas.");
+            Console.WriteLine("Neumaticos tipo: " + autobus.Neumaticos1);
+            Console.WriteLine("Carroceria tipo " + autobus.Carroceria);
+            Console.WriteLine("Tiene un total de " + autobus.NumAsientos + " asientos");
+            Console.WriteLine("Capacidad de "+autobus.CapacidadDePasajeros+" pasajeros.");
+            Console.WriteLine("Es de uso " + autobus.Uso);
+
+            Console.WriteLine("La ruta es de "+autobus.Rutas);
+            Console.WriteLine("El valor del pasaje es de: $"+autobus.ValorPasaje);
         }
     }
 }
